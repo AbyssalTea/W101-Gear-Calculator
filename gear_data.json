@@ -1,0 +1,795 @@
+{
+	"schools": {
+		"Balance": {
+			"Hat": [
+				{
+					"name": "Deft Dream Reaver Hood",
+					"pins": ["Shield", "Sword", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 983,
+						"powerPipChance": 11,
+						"accuracy.Balance": 5,
+						"critical.Balance": 184,
+						"block.Universal": 96,
+						"damage.Balance": 34,
+						"resist.Universal": 12,
+						"pierce.Balance": 8
+					}
+				},
+				{
+					"name": "Deft Dream Stalker Hood",
+					"pins": ["Shield", "Sword", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 874,
+						"powerPipChance": 10,
+						"shadRating": 17,
+						"accuracy.Balance": 7,
+						"block.Universal": 109,
+						"damage.Balance": 28,
+						"resist.Universal": 16,
+						"pierce.Balance": 6
+					}
+				},
+				{
+					"name": "Deft Dream Warper Hood",
+					"pins": [],
+					"jewels": [],
+					"stats": {
+						"health": 874,
+						"powerPipChance": 10,
+						"accuracy.Balance": 4,
+						"critical.Balance": 161,
+						"block.Universal": 82,
+						"damage.Balance": 31,
+						"pierce.Balance": 7
+					}
+				},
+				{
+					"name": "Daemonic Crown of Impossibility",
+					"pins": ["Power", "Sword", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 874,
+						"powerPipChance": 12,
+						"shadRating": 17,
+						"accuracy.Balance": 5,
+						"critical.Balance": 184,
+						"damage.Balance": 28,
+						"resist.Universal": 10,
+						"pierce.Balance": 9
+					}
+				},
+				{
+					"name": "Unreal Crown of Impossibility",
+					"pins": ["Power", "Sword", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 765,
+						"powerPipChance": 11,
+						"shadRating": 19,
+						"accuracy.Balance": 7,
+						"block.Universal": 96,
+						"damage.Balance": 28,
+						"resist.Universal": 15,
+						"pierce.Balance": 6
+					}
+				},
+				{
+					"name": "Prudent Crimefighter's Hat",
+					"pins": ["Shield", "Sword", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 983,
+						"powerPipChance": 10,
+						"shadRating": 21,
+						"critical.Balance": 161,
+						"block.Universal": 96,
+						"damage.Balance": 31,
+						"resist.Universal": 12,
+						"pierce.Balance": 7
+					}
+				},
+				{
+					"name": "Prudent Private Eye's Hat",
+					"pins": ["Shield", "Sword", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 765,
+						"shadRating": 19,
+						"accuracy.Balance": 5,
+						"critical.Balance": 184,
+						"block.Universal": 96,
+						"damage.Balance": 34,
+						"resist.Universal": 15,
+						"pierce.Balance": 8
+					}
+				}
+			],
+			"Robe": [
+				{
+					"name": "Deft Dream Reaver Armor",
+					"pins": ["Sword", "Power", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 1335,
+						"powerPipChance": 8,
+						"accuracy.Balance": 8,
+						"critical.Balance": 120,
+						"block.Universal": 120,
+						"damage.Balance": 25,
+						"resist.Universal": 18,
+						"pierce.Balance": 7
+					}
+				},
+				{
+					"name": "Deft Dream Stalker Armor",
+					"pins": ["Power", "Power", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 1907,
+						"powerPipChance": 11,
+						"shadRating": 19,
+						"accuracy.Balance": 7,
+						"block.Universal": 137,
+						"damage.Balance": 25,
+						"resist.Universal": 16,
+						"pierce.Balance": 5
+					}
+				},
+				{
+					"name": "Deft Dream Warper Armor",
+					"pins": [],
+					"jewels": [],
+					"stats": {
+						"powerPipChance": 6,
+						"accuracy.Balance": 7,
+						"critical.Balance": 105,
+						"block.Universal": 103,
+						"damage.Balance": 22,
+						"resist.Universal": 16,
+						"pierce.Balance": 7
+					}
+				},
+				{
+					"name": "Daemonic Armor of Impossibility",
+					"pins": ["Sword", "Power", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 1145,
+						"powerPipChance": 9,
+						"shadRating": 19,
+						"accuracy.Balance": 9,
+						"critical.Balance": 120,
+						"damage.Balance": 31,
+						"resist.Universal": 16,
+						"pierce.Balance": 6
+					}
+				},
+				{
+					"name": "Unreal Armor of Impossibility",
+					"pins": ["Power", "Power", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 1717,
+						"powerPipChance": 12,
+						"shadRating": 22,
+						"accuracy.Balance": 8,
+						"block.Universal": 120,
+						"damage.Balance": 25,
+						"resist.Universal": 14,
+						"pierce.Balance": 5
+					}
+				},
+				{
+					"name": "Prudent Crimefighter's Coat",
+					"pins": ["Power", "Power", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 1335,
+						"powerPipChance": 11,
+						"shadRating": 19,
+						"critical.Balance": 105,
+						"block.Universal": 120,
+						"damage.Balance": 28,
+						"resist.Universal": 18,
+						"pierce.Balance": 5
+					}
+				},
+				{
+					"name": "Prudent Private Eye's Coat",
+					"pins": ["Sword", "Power", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 1717,
+						"shadRating": 17,
+						"accuracy.Balance": 8,
+						"critical.Balance": 120,
+						"block.Universal": 120,
+						"damage.Balance": 25,
+						"resist.Universal": 14,
+						"pierce.Balance": 7
+					}
+				}
+			],
+			"Boots": [
+				{
+					"name": "Deft Dream Reaver Boots",
+					"pins": ["Sword", "Power", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 1272,
+						"powerPipChance": 8,
+						"accuracy.Balance": 3,
+						"critical.Balance": 136,
+						"block.Universal": 150,
+						"damage.Balance": 40,
+						"resist.Universal": 12,
+						"pierce.Balance": 7
+					}
+				},
+				{
+					"name": "Deft Dream Stalker Boots",
+					"pins": ["Shield", "Power", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 1131,
+						"powerPipChance": 7,
+						"shadRating": 14,
+						"accuracy.Balance": 5,
+						"block.Universal": 172,
+						"damage.Balance": 32,
+						"resist.Universal": 16,
+						"pierce.Balance": 5
+					}
+				},
+				{
+					"name": "Deft Dream Warper Boots",
+					"pins": [],
+					"jewels": [],
+					"stats": {
+						"health": 1131,
+						"powerPipChance": 7,
+						"accuracy.Balance": 3,
+						"critical.Balance": 119,
+						"block.Universal": 129,
+						"damage.Balance": 36,
+						"pierce.Balance": 6
+					}
+				},
+				{
+					"name": "Daemonic Wraps of Impossibility",
+					"pins": ["Sword", "Power", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 1131,
+						"powerPipChance": 9,
+						"shadRating": 14,
+						"accuracy.Balance": 4,
+						"critical.Balance": 136,
+						"damage.Balance": 32,
+						"resist.Universal": 10,
+						"pierce.Balance": 8
+					}
+				},
+				{
+					"name": "Unreal Wraps of Impossibility",
+					"pins": ["Shield", "Power", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 990,
+						"powerPipChance": 8,
+						"shadRating": 16,
+						"accuracy.Balance": 5,
+						"block.Universal": 150,
+						"damage.Balance": 32,
+						"resist.Universal": 15,
+						"pierce.Balance": 5
+					}
+				},
+				{
+					"name": "Prudent Crimefighter's Shoes",
+					"pins": ["Sword", "Power", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 1272,
+						"powerPipChance": 7,
+						"shadRating": 18,
+						"critical.Balance": 119,
+						"block.Universal": 150,
+						"damage.Balance": 36,
+						"resist.Universal": 12,
+						"pierce.Balance": 6
+					}
+				},
+				{
+					"name": "Prudent Private Eye's Shoes",
+					"pins": ["Sword", "Power", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 990,
+						"shadRating": 16,
+						"accuracy.Balance": 3,
+						"critical.Balance": 136,
+						"block.Universal": 150,
+						"damage.Balance": 40,
+						"resist.Universal": 15,
+						"pierce.Balance": 7
+					}
+				}
+			],
+			"Wand": [
+				{
+					"name": "Deft Dream Reaver Boomerang",
+					"pins": [],
+					"jewels": ["Tear"],
+					"stats": {
+						"accuracy.Balance": 3,
+						"critical.Balance": 69,
+						"critical.Universal": 69,
+						"block.Universal": 90,
+						"damage.Balance": 12,
+						"damage.Universal": 18,
+						"pierce.Balance": 8,
+						"pipConv.Balance": 243
+					}
+				},
+				{
+					"name": "Deft Dream Stalker Boomerang",
+					"pins": [],
+					"jewels": ["Square"],
+					"stats": {
+						"shadRating": 17,
+						"accuracy.Balance": 3,
+						"block.Universal": 100,
+						"damage.Balance": 18,
+						"pierce.Balance": 4,
+						"pierce.Universal": 4,
+						"pipConv.Balance": 122,
+						"pipConv.Universal": 152
+					}
+				},
+				{
+					"name": "Deft Dream Warper Boomerang",
+					"pins": [],
+					"jewels": [],
+					"stats": {
+						"accuracy.Balance": 2,
+						"critical.Balance": 121,
+						"block.Universal": 80,
+						"damage.Balance": 12,
+						"damage.Universal": 15,
+						"pierce.Balance": 7,
+						"pipConv.Balance": 213
+					}
+				},
+				{
+					"name": "Daemonic Staff of Impossibility",
+					"pins": [],
+					"jewels": ["Tear"],
+					"stats": {
+						"accuracy.Balance": 4,
+						"critical.Balance": 138,
+						"block.Universal": 80,
+						"damage.Balance": 12,
+						"damage.Universal": 12,
+						"pierce.Balance": 4,
+						"pierce.Universal": 6,
+						"pipConv.Balance": 213
+					}
+				},
+				{
+					"name": "Unreal Staff of Impossibility",
+					"pins": [],
+					"jewels": ["Triangle"],
+					"stats": {
+						"shadRating": 19,
+						"accuracy.Balance": 4,
+						"critical.Balance": 104,
+						"block.Universal": 90,
+						"damage.Balance": 12,
+						"damage.Universal": 12,
+						"pipConv.Balance": 61,
+						"pipConv.Universal": 182
+					}
+				},
+				{
+					"name": "Prudent Attunement Staff",
+					"pins": [],
+					"jewels": ["Tear"],
+					"stats": {
+						"shadRating": 21,
+						"critical.Balance": 121,
+						"block.Universal": 90,
+						"damage.Balance": 12,
+						"damage.Universal": 15,
+						"pierce.Balance": 4,
+						"pierce.Universal": 3,
+						"pipConv.Balance": 213
+					}
+				},
+				{
+					"name": "Prudent Attunement Rod",
+					"pins": [],
+					"jewels": ["Tear"],
+					"stats": {
+						"shadRating": 19,
+						"accuracy.Balance": 3,
+						"critical.Balance": 138,
+						"block.Universal": 90,
+						"damage.Balance": 12,
+						"damage.Universal": 18,
+						"pierce.Balance": 4,
+						"pierce.Universal": 4
+					}
+				}
+			],
+			"Athame": [
+				{
+					"name": "Deft Dream Reaver Knife",
+					"pins": [],
+					"jewels": ["Tear", "Circle", "Circle", "Square"],
+					"stats": {
+						"health": 1177,
+						"mana": 174,
+						"powerPipChance": 16,
+						"block.Universal": 90,
+						"damage.Universal": 14,
+						"damage.Balance": 10
+					}
+				},
+				{
+					"name": "Deft Dream Stalker Knife",
+					"pins": [],
+					"jewels": ["Tear", "Circle", "Square", "Triangle"],
+					"stats": {
+						"health": 1046,
+						"mana": 203,
+						"powerPipChance": 18,
+						"damage.Universal": 10,
+						"damage.Balance": 10,
+						"healing.Outgoing": 10
+					}
+				},
+				{
+					"name": "Deft Dream Warper Knife",
+					"pins": [],
+					"jewels": ["Tear", "Circle", "Circle", "Square"],
+					"stats": {
+						"health": 1046,
+						"mana": 145,
+						"powerPipChance": 14,
+						"block.Universal": 77,
+						"damage.Balance": 21
+					}
+				},
+				{
+					"name": "Daemonic Dirk of Impossibility",
+					"pins": [],
+					"jewels": ["Tear", "Circle", "Circle", "Triangle"],
+					"stats": {
+						"mana": 203,
+						"powerPipChance": 18,
+						"block.Universal": 77,
+						"damage.Universal": 14,
+						"damage.Balance": 10,
+						"healing.Outgoing": 8
+					}
+				},
+				{
+					"name": "Unreal Dirk of Impossibility",
+					"pins": [],
+					"jewels": ["Tear", "Circle", "Square", "Triangle"],
+					"stats": {
+						"mana": 232,
+						"powerPipChance": 20,
+						"block.Universal": 116,
+						"damage.Universal": 10,
+						"damage.Balance": 10,
+						"healing.Outgoing": 7
+					}
+				},
+				{
+					"name": "Prudent Crimefighter's Knife",
+					"pins": [],
+					"jewels": ["Tear", "Circle", "Circle", "Triangle"],
+					"stats": {
+						"health": 1177,
+						"mana": 203,
+						"powerPipChance": 18,
+						"block.Universal": 90,
+						"damage.Universal": 12,
+						"damage.Balance": 10
+					}
+				},
+				{
+					"name": "Prudent Private Eye's Knife",
+					"pins": [],
+					"jewels": ["Tear", "Circle", "Circle", "Square"],
+					"stats": {
+						"health": 1177,
+						"mana": 174,
+						"powerPipChance": 16,
+						"damage.Universal": 14,
+						"damage.Balance": 10,
+						"healing.Outgoing": 7
+					}
+				},
+			],
+			"Amulet": [
+				{
+					"name": "Deft Dream Reaver Amulet",
+					"pins": [],
+					"jewels": ["Circle", "Triangle"],
+					"stats": {
+						"health": 511,
+						"block.Universal": 81,
+						"resist.Universal": 7,
+						"pipConv.Balance": 98,
+						"pipConv.Universal": 98
+					}
+				},
+				{
+					"name": "Deft Dream Stalker Amulet",
+					"pins": [],
+					"jewels": ["Square", "Triangle"],
+					"stats": {
+						"health": 729,
+						"block.Universal": 72,
+						"resist.Universal": 8,
+						"pipConv.Balance": 98,
+						"pipConv.Universal": 122
+					}
+				},
+				{
+					"name": "Deft Dream Warper Amulet",
+					"pins": [],
+					"jewels": ["Circle", "Triangle"],
+					"stats": {
+						"block.Universal": 72,
+						"resist.Universal": 6,
+						"pipConv.Balance": 171
+					}
+				},
+				{
+					"name": "Daemonic Ampul of Impossibility",
+					"pins": [],
+					"jewels": ["Circle", "Triangle"],
+					"stats": {
+						"health": 438,
+						"block.Universal": 72,
+						"resist.Universal": 6,
+						"pipConv.Balance": 98,
+						"pipConv.Universal": 122
+					}
+				},
+				{
+					"name": "Unreal Ampul of Impossibility",
+					"pins": [],
+					"jewels": ["Tear", "Triangle"],
+					"stats": {
+						"health": 511,
+						"block.Universal": 63,
+						"resist.Universal": 9,
+						"pipConv.Balance": 98,
+						"pipConv.Universal": 146
+					}
+				},
+				{
+					"name": "Prudent Crimefighter's Clasp",
+					"pins": [],
+					"jewels": ["Circle", "Triangle"],
+					"stats": {
+						"health": 511,
+						"block.Universal": 63,
+						"resist.Universal": 9,
+						"pipConv.Balance": 98,
+						"pipConv.Universal": 122
+					}
+				},
+				{
+					"name": "Prudent Private Eye's Clasp",
+					"pins": [],
+					"jewels": ["Circle", "Triangle"],
+					"stats": {
+						"health": 511,
+						"block.Universal": 63,
+						"resist.Universal": 9,
+						"pipConv.Balance": 98,
+						"pipConv.Universal": 98
+					}
+				}
+			],
+			"Ring": [
+				{
+					"name": "Deft Dream Reaver Ring",
+					"pins": [],
+					"jewels": ["Tear", "Circle", "Square"],
+					"stats": {
+						"health": 561,
+						"mana": 144,
+						"powerPipChance": 19,
+						"critical.Balance": 104,
+						"damage.Balance": 7,
+						"damage.Universal": 11
+					}
+				},
+				{
+					"name": "Deft Dream Stalker Ring",
+					"pins": [],
+					"jewels": ["Tear", "Tear", "Square"],
+					"stats": {
+						"mana": 168,
+						"powerPipChance": 21,
+						"critical.Balance": 52,
+						"critical.Universal": 52,
+						"damage.Balance": 11,
+						"healing.Outgoing": 14
+					}
+				},
+				{
+					"name": "Deft Dream Warper Ring",
+					"pins": [],
+					"jewels": ["Tear", "Circle", "Square"],
+					"stats": {
+						"health": 499,
+						"mana": 120,
+						"powerPipChance": 17,
+						"critical.Balance": 91,
+						"damage.Balance": 16
+					}
+				},
+				{
+					"name": "Daemonic Ring of Impossibility",
+					"pins": [],
+					"jewels": ["Tear", "Circle", "Square"],
+					"stats": {
+						"mana": 168,
+						"powerPipChance": 21,
+						"critical.Balance": 104,
+						"damage.Balance": 7,
+						"damage.Universal": 11,
+						"healing.Outgoing": 12
+					}
+				},
+				{
+					"name": "Unreal Ring of Impossibility",
+					"pins": [],
+					"jewels": ["Tear", "Square", "Triangle"],
+					"stats": {
+						"mana": 192,
+						"powerPipChance": 23,
+						"critical.Balance": 52,
+						"critical.Universal": 52,
+						"damage.Balance": 11,
+						"healing.Outgoing": 13
+					}
+				},
+				{
+					"name": "Prudent Crimefighter's Ring",
+					"pins": [],
+					"jewels": ["Tear", "Circle", "Square"],
+					"stats": {
+						"health": 561,
+						"mana": 168,
+						"powerPipChance": 21,
+						"critical.Balance": 91,
+						"damage.Balance": 7,
+						"damage.Universal": 9
+					}
+				},
+				{
+					"name": "Prudent Private Eye's Ring",
+					"pins": [],
+					"jewels": ["Tear", "Circle", "Square"],
+					"stats": {
+						"health": 561,
+						"mana": 144,
+						"powerPipChance": 19,
+						"critical.Balance": 52,
+						"critical.Universal": 78,
+						"damage.Balance": 14
+					}
+				}
+			],
+			"Deck": [
+				{
+					"name": "Deft Dream Reaver Deck",
+					"pins": [],
+					"jewels": ["Circle"],
+					"stats": {
+						"health": 154,
+						"critical.Balance": 85,
+						"block.Universal": 88,
+						"archmastery": 55
+					}
+				},
+				{
+					"name": "Deft Dream Stalker Deck",
+					"pins": [],
+					"jewels": ["Square"],
+					"stats": {
+						"health": 176,
+						"block.Universal": 97,
+						"pipConv.Balance": 120,
+						"archmastery": 62
+					}
+				},
+				{
+					"name": "Deft Dream Warper Deck",
+					"pins": [],
+					"jewels": ["Circle"],
+					"stats": {
+						"health": 132,
+						"critical.Balance": 77,
+						"block.Universal": 78
+					}
+				},
+				{
+					"name": "Daemonic Deck of Impossibility",
+					"pins": [],
+					"jewels": ["Circle"],
+					"stats": {
+						"health": 176,
+						"critical.Balance": 85,
+						"pipConv.Balance": 120,
+						"archmastery": 62
+					}
+				},
+				{
+					"name": "Unreal Deck of Impossibility",
+					"pins": [],
+					"jewels": ["Triangle"],
+					"stats": {
+						"health": 198,
+						"block.Universal": 68,
+						"pipConv.Balance": 133,
+						"archmastery": 68
+					}
+				},
+				{
+					"name": "Prudent Crimefighter's Notes",
+					"pins": [],
+					"jewels": ["Circle"],
+					"stats": {
+						"health": 198,
+						"critical.Balance": 77,
+						"block.Universal": 68,
+						"archmastery": 62
+					}
+				},
+				{
+					"name": "Prudent Private Eye's Notes",
+					"pins": [],
+					"jewels": ["Circle"],
+					"stats": {
+						"health": 198,
+						"critical.Balance": 85,
+						"block.Universal": 68,
+						"archmastery": 55
+					}
+				}
+			]
+		}
+		"Fire": {
+			"Hat": [
+				{
+					"name": "Fervid Dream Reaver Hood",
+					"pins": ["Shield", "Sword", "Sword"],
+					"jewels": [],
+					"stats": {
+						"health": 898,
+						"powerPipChance": 9,
+						"accuracy.Fire": 6,
+						"critical.Fire": 188,
+						"block.Universal": 94,
+						"damage.Fire": 36,
+						"resist.Universal": 9,
+						"pierce.Fire": 8
+					}
+				}
+			]
+		}
+	}
+}

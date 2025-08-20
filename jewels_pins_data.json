@@ -1,0 +1,592 @@
+{
+  "schools": {
+    "Balance": {
+      "Shield": [
+        {
+          "name": "Balance Mending Pin (160)",
+          "stats": {
+            "healing.Outgoing": 23
+          }
+        },
+				{
+          "name": "Fire Resist Pin (140, Balance)",
+          "stats": {
+            "resist.Fire": 11
+          }
+        },
+				{
+          "name": "Ice Resist Pin (140, Balance)",
+          "stats": {
+            "resist.Ice": 10
+          }
+        },
+				{
+          "name": "Storm Resist Pin (160, Balance)",
+          "stats": {
+            "resist.Storm": 12
+          }
+        },
+				{
+          "name": "Myth Resist Pin (140, Balance)",
+          "stats": {
+            "resist.Myth": 11
+          }
+        },
+				{
+          "name": "Life Resist Pin (140, Balance)",
+          "stats": {
+            "resist.Life": 9
+          }
+        },
+				{
+          "name": "Death Resist Pin (150, Balance)",
+          "stats": {
+            "resist.Death": 11
+          }
+        },
+				{
+          "name": "Fire Blocking Pin (160, Balance)",
+          "stats": {
+            "block.Fire": 151
+          }
+        },
+				{
+          "name": "Ice Blocking Pin (160, Balance)",
+          "stats": {
+            "block.Ice": 129
+          }
+        },
+				{
+          "name": "Storm Blocking Pin (160, Balance)",
+          "stats": {
+            "block.Storm": 166
+          }
+        },
+				{
+          "name": "Myth Blocking Pin (160, Balance)",
+          "stats": {
+            "block.Myth": 159
+          }
+        },
+				{
+          "name": "Life Blocking Pin (160, Balance)",
+          "stats": {
+            "block.Life": 137
+          }
+        },
+				{
+          "name": "Death Blocking Pin (160, Balance)",
+          "stats": {
+            "block.Death": 144
+          }
+        },
+      ],
+      "Sword": [
+        {
+          "name": "Fire Crushing Pin (170, Balance)",
+          "stats": {
+            "pierce.Fire": 4,
+            "critical.Fire": 106
+          }
+        },
+				{
+          "name": "Fire Disabling Pin (170, Balance)",
+          "stats": {
+            "critical.Fire": 106,
+						"damage.Fire": 20
+          }
+        },
+				{
+          "name": "Fire Punishing Pin (170, Balance)",
+          "stats": {
+            "pierce.Fire": 4,
+            "damage.Fire": 20
+          }
+        },
+				{
+          "name": "Ice Crushing Pin (170, Balance)",
+          "stats": {
+            "pierce.Ice": 4,
+            "critical.Ice": 106
+          }
+        },
+				{
+          "name": "Ice Disabling Pin (170, Balance)",
+          "stats": {
+            "critical.Ice": 106,
+						"damage.Ice": 20
+          }
+        },
+				{
+          "name": "Ice Punishing Pin (170, Balance)",
+          "stats": {
+            "pierce.Ice": 4,
+            "damage.Ice": 20
+          }
+        },
+				{
+          "name": "Storm Crushing Pin (170, Balance)",
+          "stats": {
+            "pierce.Storm": 4,
+            "critical.Storm": 106
+          }
+        },
+				{
+          "name": "Storm Disabling Pin (170, Balance)",
+          "stats": {
+            "critical.Storm": 106,
+						"damage.Storm": 20
+          }
+        },
+				{
+          "name": "Storm Punishing Pin (170, Balance)",
+          "stats": {
+            "pierce.Storm": 4,
+            "damage.Storm": 20
+          }
+        },
+				{
+          "name": "Myth Crushing Pin (170, Balance)",
+          "stats": {
+            "pierce.Myth": 4,
+            "critical.Myth": 106
+          }
+        },
+				{
+          "name": "Myth Disabling Pin (170, Balance)",
+          "stats": {
+            "critical.Myth": 106,
+						"damage.Myth": 20
+          }
+        },
+				{
+          "name": "Myth Punishing Pin (170, Balance)",
+          "stats": {
+            "pierce.Myth": 4,
+            "damage.Myth": 20
+          }
+        },
+				{
+          "name": "Life Crushing Pin (170, Balance)",
+          "stats": {
+            "pierce.Life": 4,
+            "critical.Life": 106
+          }
+        },
+				{
+          "name": "Life Disabling Pin (170, Balance)",
+          "stats": {
+            "critical.Life": 106,
+						"damage.Life": 20
+          }
+        },
+				{
+          "name": "Life Punishing Pin (170, Balance)",
+          "stats": {
+            "pierce.Life": 4,
+            "damage.Life": 20
+          }
+        },
+				{
+          "name": "Death Crushing Pin (170, Balance)",
+          "stats": {
+            "pierce.Death": 4,
+            "critical.Death": 106
+          }
+        },
+				{
+          "name": "Death Disabling Pin (170, Balance)",
+          "stats": {
+            "critical.Death": 106,
+						"damage.Death": 20
+          }
+        },
+				{
+          "name": "Death Punishing Pin (170, Balance)",
+          "stats": {
+            "pierce.Death": 4,
+            "damage.Death": 20
+          }
+        }
+      ],
+			"Square": [
+				{
+          "name": "Unearthly Health Citrine +670",
+          "stats": {
+            "health": 670
+          }
+        },
+				{
+          "name": "Unearthly Blocking Citrine +53",
+          "stats": {
+            "block.Universal": 53
+          }
+        }
+			],
+			"Circle": [
+				{
+          "name": "Unearthly Damage Citrine +10% (Balance)",
+          "stats": {
+            "damage.Balance": 10
+          }
+        },
+				{
+          "name": "Unearthly Damage Ruby +10% (Balance)",
+          "stats": {
+            "damage.Fire": 10
+          }
+        },
+				{
+          "name": "Unearthly Damage Sapphire +10% (Balance)",
+          "stats": {
+            "damage.Ice": 10
+          }
+        },
+				{
+          "name": "Unearthly Damage Amethyst +10% (Balance)",
+          "stats": {
+            "damage.Storm": 10
+          }
+        },
+				{
+          "name": "Unearthly Damage Peridot +10% (Balance)",
+          "stats": {
+            "damage.Myth": 10
+          }
+        },
+				{
+          "name": "Unearthly Damage Jade +10% (Balance)",
+          "stats": {
+            "damage.Life": 10
+          }
+        },
+				{
+          "name": "Unearthly Damage Onyx +10% (Balance)",
+          "stats": {
+            "damage.Death": 10
+          }
+        },
+				{
+          "name": "Unearthly Critical Citrine +48 (Balance)",
+          "stats": {
+            "critical.Balance": 48
+          }
+        },
+				{
+          "name": "Unearthly Critical Ruby +48 (Balance)",
+          "stats": {
+            "critical.Fire": 48
+          }
+        },
+				{
+          "name": "Unearthly Critical Sapphire +48 (Balance)",
+          "stats": {
+            "critical.Ice": 48
+          }
+        },
+				{
+          "name": "Unearthly Critical Amethyst +48 (Balance)",
+          "stats": {
+            "critical.Storm": 48
+          }
+        },
+				{
+          "name": "Unearthly Critical Peridot +48 (Balance)",
+          "stats": {
+            "critical.Myth": 48
+          }
+        },
+				{
+          "name": "Unearthly Critical Jade +48 (Balance)",
+          "stats": {
+            "critical.Life": 48
+          }
+        },
+				{
+          "name": "Unearthly Critical Onyx +48 (Balance)",
+          "stats": {
+            "critical.Death": 48
+          }
+        }
+			]
+    },
+    "Universal": {
+      "Power": [
+        {
+          "name": "Balance Accurate Pin (100)",
+					"excluded_school": "Balance",
+          "stats": {
+            "accuracy.Balance": 5
+          }
+        },
+				{
+					"name": "Balance Conversion Pin (170)",
+					"excluded_school": "Balance",
+					"stats": {
+						"pipConv.Balance": 61
+					}
+				},
+				{
+          "name": "Fire Accurate Pin (100)",
+					"excluded_school": "Fire",
+          "stats": {
+            "accuracy.Fire": 6
+          }
+        },
+				{
+					"name": "Fire Conversion Pin (170)",
+					"excluded_school": "Fire",
+					"stats": {
+						"pipConv.Fire": 61
+					}
+				},
+				{
+          "name": "Ice Accurate Pin (110)",
+					"excluded_school": "Ice",
+          "stats": {
+            "accuracy.Ice": 5
+          }
+        },
+				{
+					"name": "Ice Conversion Pin (170)",
+					"excluded_school": "Ice",
+					"stats": {
+						"pipConv.Ice": 61
+					}
+				},
+				{
+          "name": "Storm Accurate Pin (80)",
+					"excluded_school": "Storm",
+          "stats": {
+            "accuracy.Storm": 7
+          }
+        },
+				{
+					"name": "Storm Conversion Pin (170)",
+					"excluded_school": "Storm",
+					"stats": {
+						"pipConv.Storm": 61
+					}
+				},
+				{
+          "name": "Myth Accurate Pin (100)",
+					"excluded_school": "Myth",
+          "stats": {
+            "accuracy.Myth": 6
+          }
+        },
+				{
+					"name": "Myth Conversion Pin (170)",
+					"excluded_school": "Myth",
+					"stats": {
+						"pipConv.Myth": 61
+					}
+				},
+				{
+          "name": "Life Accurate Pin (100)",
+					"excluded_school": "Life",
+          "stats": {
+            "accuracy.Life": 5
+          }
+        },
+				{
+					"name": "Life Conversion Pin (170)",
+					"excluded_school": "Life",
+					"stats": {
+						"pipConv.Life": 61
+					}
+				},
+				{
+          "name": "Death Accurate Pin (100)",
+					"excluded_school": "Death",
+          "stats": {
+            "accuracy.Death": 5
+          }
+        },
+				{
+					"name": "Death Conversion Pin (170)",
+					"excluded_school": "Death",
+					"stats": {
+						"pipConv.Death": 61
+					}
+				}
+      ],
+			"Square": [
+				{
+					"name": "Unearthly Mending Opal +8%",
+					"stats": {
+						"healing.Outgoing": 8
+					}
+				}
+			],
+			"Triangle": [
+				{
+					"name": "Lustrious Pip Opal +10%",
+					"stats": {
+						"powerPipChance": 10
+					}
+				},
+				{
+					"name": "Flawless Accurate Citrine +16%",
+					"stats": {
+						"accuracy.Balance": 16
+					}
+				},
+				{
+					"name": "Flawless Accurate Ruby +16%",
+					"stats": {
+						"accuracy.Fire": 16
+					}
+				},
+				{
+					"name": "Flawless Accurate Sapphire +16%",
+					"stats": {
+						"accuracy.Ice": 16
+					}
+				},
+				{
+					"name": "Flawless Accurate Amethyst +16%",
+					"stats": {
+						"accuracy.Storm": 16
+					}
+				},
+				{
+					"name": "Flawless Accurate Peridot +16%",
+					"stats": {
+						"accuracy.Myth": 16
+					}
+				},
+				{
+					"name": "Flawless Accurate Jade +16%",
+					"stats": {
+						"accuracy.Life": 16
+					}
+				},
+				{
+					"name": "Flawless Accurate Onyx +16%",
+					"stats": {
+						"accuracy.Death": 16
+					}
+				},
+				{
+					"name": "Unearthly Conversion Citrine +62",
+					"stats": {
+						"pipConv.Balance": 62
+					}
+				},
+				{
+					"name": "Unearthly Conversion Ruby +60",
+					"stats": {
+						"pipConv.Fire": 60
+					}
+				},
+				{
+					"name": "Unearthly Conversion Sapphire +61",
+					"stats": {
+						"pipConv.Ice": 61
+					}
+				},
+				{
+					"name": "Unearthly Conversion Amethyst +60",
+					"stats": {
+						"pipConv.Storm": 60
+					}
+				},
+				{
+					"name": "Unearthly Conversion Peridot +61",
+					"stats": {
+						"pipConv.Myth": 61
+					}
+				},
+				{
+					"name": "Unearthly Conversion Jade +62",
+					"stats": {
+						"pipConv.Life": 62
+					}
+				},
+				{
+					"name": "Unearthly Conversion Onyx +62",
+					"stats": {
+						"pipConv.Death": 62
+					}
+				},
+				{
+					"name": "Unearthly Archmastery Opal +45",
+					"stats": {
+						"archmastery": 45
+					}
+				},
+				{
+					"name": "Unearthly Shadow Hematite +10",
+					"stats": {
+						"shadRating": 10
+					}
+				}
+			],
+			"Circle": [
+				{
+					"name": "Polished Piercing Citrine +6%",
+					"stats": {
+						"pierce.Balance": 6
+					}
+				},
+				{
+					"name": "Polished Piercing Ruby +6%",
+					"stats": {
+						"pierce.Fire": 6
+					}
+				},
+				{
+					"name": "Polished Piercing Sapphire +6%",
+					"stats": {
+						"pierce.Ice": 6
+					}
+				},
+				{
+					"name": "Polished Piercing Amethyst +6%",
+					"stats": {
+						"pierce.Storm": 6
+					}
+				},
+				{
+					"name": "Polished Piercing Peridot +6%",
+					"stats": {
+						"pierce.Myth": 6
+					}
+				},
+				{
+					"name": "Polished Piercing Jade +6%",
+					"stats": {
+						"pierce.Life": 6
+					}
+				},
+				{
+					"name": "Polished Piercing Onyx +6%",
+					"stats": {
+						"pierce.Death": 6
+					}
+				}
+			],
+			"Tear": [
+				{
+					"name": "Flawless Health Opal +155",
+					"stats": {
+						"health": 155
+					}
+				},
+				{
+					"name": "Amazing Health Opal +145",
+					"stats": {
+						"health": 145
+					}
+				},
+				{
+					"name": "Unearthly Mana Opal +68",
+					"stats": {
+						"mana": 68
+					}
+				}
+			]
+    }
+  }
+}

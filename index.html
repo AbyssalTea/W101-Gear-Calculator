@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wizard101 Gear Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      max-width: 1000px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .gear-section {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    .gear-section h3 {
+      margin-top: 0;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+    }
+    select {
+      width: 100%;
+      padding: 6px;
+    }
+    .final-stats {
+      border: 2px solid #555;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f5f5f5;
+      margin-top: 40px;
+    }
+    .stat-entry {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Wizard101 Gear Calculator</h1>
+
+  <div class="form-group">
+    <label for="schoolSelect">Select School:</label>
+    <select id="schoolSelect"></select>
+  </div>
+
+  <div id="gearContainer"></div>
+
+  <div class="final-stats" id="finalStats">
+    <h2>Final Stats</h2>
+    <div id="statLines"></div>
+  </div>
+
+  <script>
+    const gearSlots = ["Hat", "Robe", "Boots", "Wand", "Athame", "Amulet", "Ring", "Deck"];
+    let gearData = {};
+    let jewelPinData = {};
+    let currentSchool = "";
+
+    async function loadData() {
+      gearData = await fetch("gear_data.json").then(res => res.json());
+      jewelPinData = await fetch("jewels_pins_data.json").then(res => res.json());
+      populateSchools();
+    }
+
+    function populateSchools() {
+      const schoolSelect = document.getElementById("schoolSelect");
+      const schools = Object.keys(gearData.schools);
+      schoolSelect.innerHTML = schools.map(s => `<option value="${s}">${s}</option>`).join("");
+      currentSchool = schools[0];
+      renderGearSections();
+      schoolSelect.addEventListener("change", () => {
+        currentSchool = schoolSelect.value;
+        renderGearSections();
+      });
+    }
+
+    function renderGearSections() {
+      const container = document.getElementById("gearContainer");
+      container.innerHTML = "";
+
+      gearSlots.forEach(slot => {
+        const section = document.createElement("div");
+        section.className = "gear-section";
+        section.innerHTML = `
+          <h3>${slot}</h3>
+          <div class="form-group">
+            <label for="${slot}Select">Select ${slot}:</label>
+            <select id="${slot}Select">
+              <option value="">-- None --</option>
+            </select>
+          </div>
+          <div class="form-group" id="${slot}Extra"></div>
+        `;
+        container.appendChild(section);
+
+        populateGearOptions(slot);
+      });
+    }
+
+    function populateGearOptions(slot) {
+      const gearList = (gearData.schools[currentSchool][slot] || []).concat(gearData.schools.Universal?.[slot] || []);
+      const select = document.getElementById(`${slot}Select`);
+      select.innerHTML += gearList.map((g, i) => `<option value="${i}">${g.name}</option>`).join("");
+      select.addEventListener("change", () => {
+        console.log(`Selected ${slot}:`, gearList[select.value]);
+        updateFinalStats();
+      });
+    }
+
+    function updateFinalStats() {
+      // Placeholder for stat calculation
+      document.getElementById("statLines").innerText = "(Final stat calculations will be displayed here.)";
+    }
+
+    loadData();
+  </script>
+</body>
+</html>
