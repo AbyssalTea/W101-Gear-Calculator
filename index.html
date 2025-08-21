@@ -60,7 +60,7 @@
   </div>
 	
 	<div>
-		<p>Version 0.0.3</p>
+		<p>Version 0.1.0</p>
 	</div>
 
   <script>
@@ -68,6 +68,67 @@
     let gearData = {};
     let jewelPinData = {};
     let currentSchool = "";
+		
+		const statCategories = {
+			flat: ["health", "mana", "energy", "stun_resist", "power_pip", "shadow_rating", "archmastery"],
+			healing: ["healing_in", "healing_out"],
+			mastery: ["fire", "ice", "storm", "myth", "life", "death", "balance"],
+			schoolStats: ["damage", "resist", "accuracy", "critical", "block", "pierce", "pip_conversion"],
+			schools: ["fire", "ice", "storm", "myth", "life", "death", "balance", "shadow"]
+		};
+
+		function initStatTotals() {
+			const totals = {
+				health: 0, mana: 0, energy: 0, stun_resist: 0, power_pip: 0,
+				shadow_rating: 0, archmastery: 0, healing_in: 0, healing_out: 0,
+				mastery: {}, damage: {}, resist: {}, accuracy: {}, critical: {}, block: {}, pierce: {}, pip_conversion: {}
+			};
+			for (let s of statCategories.mastery) totals.mastery[s] = 0;
+			for (let stat of statCategories.schoolStats) {
+				for (let school of statCategories.schools) {
+					totals[stat][school] = 0;
+				}
+			}
+			return totals;
+		}
+
+		function addGearStats(stats, totals) {
+			for (let key in stats) {
+				let value = stats[key];
+
+				// Flat stats
+				if (statCategories.flat.includes(key)) {
+					totals[key] += value;
+				}
+
+				// Healing
+				else if (key === "healing_in" || key === "healing_out") {
+					totals[key] += value;
+				}
+
+				// Mastery (e.g. mastery_fire)
+				else if (key.startsWith("mastery_")) {
+					let school = key.split("_")[1];
+					if (totals.mastery[school] !== undefined) {
+						totals.mastery[school] += value;
+					}
+				}
+
+				// School stats (e.g. damage_fire or damage_universal)
+				else {
+					const [type, school] = key.split("_");
+					if (statCategories.schoolStats.includes(type)) {
+						if (school === "universal") {
+							for (let s of statCategories.schools) {
+								totals[type][s] += value;
+							}
+						} else {
+							totals[type][school] += value;
+						}
+					}
+				}
+			}
+		}
 
     async function loadData() {
       gearData = await fetch("gear_data.json").then(res => res.json());
@@ -120,10 +181,66 @@
       });
     }
 
-    function updateFinalStats() {
-      // Placeholder for stat calculation
-      document.getElementById("statLines").innerText = "(Final stat calculations will be displayed here.)";
-    }
+		function updateFinalStats() {
+			const totals = initStatTotals();
+
+			gearSlots.forEach(slot => {
+				const select = document.getElementById(`${slot}Select`);
+				const gearList = (gearData.schools[currentSchool][slot] || []).concat(gearData.schools.Universal?.[slot] || []);
+				const selectedIndex = select.value;
+
+				if (selectedIndex !== "") {
+					const selectedGear = gearList[selectedIndex];
+					if (selectedGear?.stats) {
+						addGearStats(selectedGear.stats, totals);
+					}
+				}
+			});
+
+			renderStats(totals);
+		}
+		
+		function renderStats(totals) {
+			const statLines = document.getElementById("statLines");
+			statLines.innerHTML = "";
+
+			// Flat Stats
+			statCategories.flat.forEach(stat => {
+				if (totals[stat] > 0) {
+					statLines.innerHTML += `<div class="stat-entry">${formatLabel(stat)}: ${totals[stat]}</div>`;
+				}
+			});
+
+			// Healing
+			if (totals.healing_in > 0) statLines.innerHTML += `<div class="stat-entry">Healing In: ${totals.healing_in}</div>`;
+			if (totals.healing_out > 0) statLines.innerHTML += `<div class="stat-entry">Healing Out: ${totals.healing_out}</div>`;
+
+			// Mastery
+			for (let s of statCategories.mastery) {
+				if (totals.mastery[s] > 0) {
+					statLines.innerHTML += `<div class="stat-entry">Mastery (${capitalize(s)}): ${totals.mastery[s]}</div>`;
+				}
+			}
+
+			// School Stats
+			for (let type of statCategories.schoolStats) {
+				for (let school of statCategories.schools) {
+					const val = totals[type][school];
+					if (val > 0) {
+						statLines.innerHTML += `<div class="stat-entry">${capitalize(type)} (${capitalize(school)}): ${val}</div>`;
+					}
+				}
+			}
+		}
+
+		function formatLabel(stat) {
+			return stat.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+		}
+		function capitalize(word) {
+			return word.charAt(0).toUpperCase() + word.slice(1);
+		}
+
+
 
     loadData();
   </script>
