@@ -1,0 +1,39 @@
+{
+  "schools": {
+    "Universal": {
+      "mana": 150,
+      "energy": 130,
+      "powerPipChance": 40,
+      "shadRating": 85,
+      "archmastery": 136
+    },
+    "Balance": {
+      "health": 5133,
+      "pipConv.Balance": 402
+    },
+    "Fire": {
+      "health": 4303,
+      "pipConv.Fire": 364
+    },
+    "Ice": {
+      "health": 5699,
+      "pipConv.Ice": 402
+    },
+    "Storm": {
+      "health": 3413,
+      "pipConv.Storm": 402
+    },
+    "Myth": {
+      "health": 4183,
+      "pipConv.Myth": 397
+    },
+    "Life": {
+      "health": 5580,
+      "pipConv.Life": 404
+    },
+    "Death": {
+      "health": 4994,
+      "pipConv.Death": 402
+    }
+  }
+}

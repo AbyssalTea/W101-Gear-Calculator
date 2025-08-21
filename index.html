@@ -60,7 +60,7 @@
   </div>
 	
 	<div>
-		<p>Version 0.1.3</p>
+		<p>Version 0.1.4</p>
 	</div>
 
   <script>
@@ -69,6 +69,7 @@
 
 		let gearData = {};
 		let jewelPinData = {};
+		let baseStatsData = { schools: {} };
 		let currentSchool = "";
 
 		// ---- Helpers: canonical names / parsing ----
@@ -233,6 +234,7 @@
 		async function loadData() {
 			gearData = await fetch("gear_data.json").then(res => res.json());
 			jewelPinData = await fetch("jewels_pins_data.json").then(res => res.json());
+			baseStatsData = await fetch("base_stats.json").then(res => res.json()).catch(() => ({ schools: {} }));
 			populateSchools();
 		}
 
@@ -286,10 +288,14 @@
 				updateFinalStats();
 			});
 		}
-
+		
 		function updateFinalStats() {
 			const totals = initTotals();
 
+			// 1) Always-on base stats
+			applyBaseStats(totals);
+
+			// 2) Selected gear
 			gearSlots.forEach(slot => {
 				const select = document.getElementById(`${slot}Select`);
 				if (!select) return;
@@ -299,11 +305,16 @@
 				const listA = gearData.schools?.[currentSchool]?.[slot] || [];
 				const listB = gearData.schools?.Universal?.[slot] || [];
 				const gearList = listA.concat(listB);
-
 				const selectedGear = gearList[Number(idx)];
-				if (selectedGear && selectedGear.stats) {
-					accumulateStats(selectedGear.stats, totals);
-				}
+				if (selectedGear?.stats) accumulateStats(selectedGear.stats, totals);
+			});
+
+			// 3) Selected pins/jewels
+			document.querySelectorAll('[data-extra-select="true"]').forEach(sel => {
+				const chosen = sel.value;
+				if (chosen === "") return;
+				const choice = sel._choices?.[Number(chosen)];
+				if (choice?.stats) accumulateStats(choice.stats, totals);
 			});
 
 			renderStats(totals);
