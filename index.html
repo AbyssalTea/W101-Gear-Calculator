@@ -60,7 +60,7 @@
   </div>
 	
 	<div>
-		<p>Version 0.1.1</p>
+		<p>Version 0.1.2</p>
 	</div>
 
   <script>
@@ -93,17 +93,19 @@
 		}
 
 		function addGearStats(stats) {
-			if (!stats) return;
+			if (!stats || typeof stats !== "object") return;
 
 			for (const key in stats) {
-				if (!statTotals.hasOwnProperty(key)) {
-					statTotals[key] = 0;  // in case there's a new/unexpected stat
-				}
-				if (typeof stats[key] === "number") {
-					statTotals[key] += stats[key];
+				const value = stats[key];
+				if (typeof value === "number") {
+					if (!statTotals.hasOwnProperty(key)) {
+						statTotals[key] = 0;
+					}
+					statTotals[key] += value;
 				}
 			}
 		}
+
 
 
     async function loadData() {
@@ -163,17 +165,20 @@
 			gearSlots.forEach(slot => {
 				const select = document.getElementById(`${slot}Select`);
 				const selectedIndex = select.value;
+
 				if (selectedIndex === "") return;
 
 				const gearList = (gearData.schools[currentSchool][slot] || []).concat(gearData.schools.Universal?.[slot] || []);
 				const selectedGear = gearList[selectedIndex];
-				if (selectedGear?.stats) {
+
+				if (selectedGear && selectedGear.stats) {
 					addGearStats(selectedGear.stats);
 				}
 			});
 
 			renderStats();
 		}
+
 
 		
 		function renderStats(totals) {
