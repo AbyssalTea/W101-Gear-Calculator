@@ -60,7 +60,7 @@
   </div>
 	
 	<div>
-		<p>Version 0.1.4</p>
+		<p>Version 0.1.5</p>
 	</div>
 
   <script>
@@ -287,6 +287,14 @@
 			select.addEventListener("change", () => {
 				updateFinalStats();
 			});
+		}
+		
+		function applyBaseStats(totals){
+			const bySchool = baseStatsData?.schools || {};
+			const uni = bySchool.Universal || {};
+			const sch = bySchool[currentSchool] || {};
+			accumulateStats(uni, totals);   // uses your existing dot-key accumulator
+			accumulateStats(sch, totals);
 		}
 		
 		function updateFinalStats() {
