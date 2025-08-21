@@ -60,7 +60,7 @@
   </div>
 	
 	<div>
-		<p>Version 0.1.0</p>
+		<p>Version 0.1.1</p>
 	</div>
 
   <script>
@@ -92,43 +92,19 @@
 			return totals;
 		}
 
-		function addGearStats(stats, totals) {
-			for (let key in stats) {
-				let value = stats[key];
+		function addGearStats(stats) {
+			if (!stats) return;
 
-				// Flat stats
-				if (statCategories.flat.includes(key)) {
-					totals[key] += value;
+			for (const key in stats) {
+				if (!statTotals.hasOwnProperty(key)) {
+					statTotals[key] = 0;  // in case there's a new/unexpected stat
 				}
-
-				// Healing
-				else if (key === "healing_in" || key === "healing_out") {
-					totals[key] += value;
-				}
-
-				// Mastery (e.g. mastery_fire)
-				else if (key.startsWith("mastery_")) {
-					let school = key.split("_")[1];
-					if (totals.mastery[school] !== undefined) {
-						totals.mastery[school] += value;
-					}
-				}
-
-				// School stats (e.g. damage_fire or damage_universal)
-				else {
-					const [type, school] = key.split("_");
-					if (statCategories.schoolStats.includes(type)) {
-						if (school === "universal") {
-							for (let s of statCategories.schools) {
-								totals[type][s] += value;
-							}
-						} else {
-							totals[type][school] += value;
-						}
-					}
+				if (typeof stats[key] === "number") {
+					statTotals[key] += stats[key];
 				}
 			}
 		}
+
 
     async function loadData() {
       gearData = await fetch("gear_data.json").then(res => res.json());
@@ -182,23 +158,23 @@
     }
 
 		function updateFinalStats() {
-			const totals = initStatTotals();
+			statTotals = initStatTotals();
 
 			gearSlots.forEach(slot => {
 				const select = document.getElementById(`${slot}Select`);
-				const gearList = (gearData.schools[currentSchool][slot] || []).concat(gearData.schools.Universal?.[slot] || []);
 				const selectedIndex = select.value;
+				if (selectedIndex === "") return;
 
-				if (selectedIndex !== "") {
-					const selectedGear = gearList[selectedIndex];
-					if (selectedGear?.stats) {
-						addGearStats(selectedGear.stats, totals);
-					}
+				const gearList = (gearData.schools[currentSchool][slot] || []).concat(gearData.schools.Universal?.[slot] || []);
+				const selectedGear = gearList[selectedIndex];
+				if (selectedGear?.stats) {
+					addGearStats(selectedGear.stats);
 				}
 			});
 
-			renderStats(totals);
+			renderStats();
 		}
+
 		
 		function renderStats(totals) {
 			const statLines = document.getElementById("statLines");
